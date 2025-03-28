@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  padding: 0.1px;
+  position: relative;
+}
+#nav {
+  height: 12vh;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#nav h1 {
+  font-family: "Lexend Giga", serif;
+  font-size: 2.5rem;
+  width: 30%;
+  padding: 2vw 7vw;
+  font-weight: 600;
+  letter-spacing: -8px;
+  position: relative;
+}
+#nav h1::before {
+  content: "model managment";
+  position: absolute;
+  font-size: 0.7rem;
+  bottom: 22%;
+  right: 30%;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+#nav h1::after {
+  content: "©";
+  position: absolute;
+  font-size: 1rem;
+  top: 30%;
+  right: 25%;
+  font-weight: 300;
+}
+#nav h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  border-right: 2px solid #000;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+#nav i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 15%;
+  font-size: 1.5rem;
+  padding-right: 4vw;
+}
+#nav h2:nth-child(4) {
+  width: 40%;
+}
+#center {
+  height: 90%;
+  width: 100%;
+  position: relative;
+  padding: 4vw;
+}
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#content video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#overplay {
+  padding: 3vw;
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+}
+#over1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 0;
+  padding-bottom: 2vw;
+}
+#over1 h1 {
+  color: white;
+  font-family: "Lexend Giga", serif;
+  font-size: 3rem;
+  line-height: 3.2vw;
+  letter-spacing: -5px;
+}
+#over1 h2 {
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 2vw;
+  font-weight: 400;
+  font-size: 1rem;
+}
+#over2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid white;
+}
+#over2 h4 {
+  color: white;
+  font-weight: 400;
+}
+#scroll {
+  height: 38vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 2.5vw 3vw;
+  animation-name: img-scroller;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#scroll img {
+  height: 100%;
+  width: 14%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1vw 1.6vw;
+}
+@keyframes img-scroller {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#alphabet {
+  height: 11vh;
+  width: 100%;
+  margin-top: 2vw;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1vw 3vw;
+}
+#alphabet h5 {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: "Lexend Giga", serif;
+  font-style: italic;
+  padding-right: 3vw;
+}
+#alphabet h6 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Lexend Giga", serif;
+  font-style: italic;
+  border: none;
+  border-radius: 48%;
+  padding: 0.8vw 1vw;
+  margin: 0 0.2vw;
+}
+#alphabet h6:hover {
+  border: 1px solid black;
+}
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 2vw;
+}
+#page2-part1 {
+  height: 100%;
+  width: 47%;
+  /* background-size: cover; */
+  background-position: center;
+  background-image: url(https://plus.unsplash.com/premium_photo-1673758905770-a62f4309c43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZWx8ZW58MHx8MHx8fDA%3D);
+}
+#page2-part2 {
+  height: 100%;
+  width: 48%;
+}
+#page2-part2 img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#text-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 0;
+  gap: 4vw;
+}
+#text-content h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#text-content p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#page3 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#page3 h1 {
+  font-family: "Lexend Giga", serif;
+  font-size: 2.5rem;
+  padding: 0 3vw;
+  text-transform: uppercase;
+}
+#page3-content {
+  height: 94%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#page3-part1 {
+  height: 100%;
+  width: 45%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#page3-left-content1 {
+  position: relative;
+  padding-top: 2vw;
+}
+#page3-left-content1 .circle {
+  height: 200px;
+  width: 200px;
+  margin-top: 4vw;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#page3-left-content1 .arrow {
+  color: black;
+  position: absolute;
+  top: 54%;
+  left: 33%;
+}
+#page3-left-content2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#page3-left-content2 h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 2vw;
+  width: 60%;
+}
+#page3-part2 {
+  height: 100%;
+  width: 45%;
+}
+#page3-part2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+#page4 {
+  height: 100%;
+  width: 100%;
+  padding: 3vw;
+}
+#page4 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+#page5 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 3vw 5vw;
+}
+#page5 > h1 {
+  text-align: center;
+  font-family: "Lexend Giga", serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  margin-bottom: 4vw;
+}
+.elem {
+  height: 16vh;
+  width: 100%;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+}
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid black;
+}
+.elem h4 {
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 6%;
+}
+.elem-part1 {
+  width: 40%;
+}
+.elem-part1 h3 {
+  font-size: 2vw;
+  font-weight: 500;
+}
+.elem-part1 h5 {
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.elem img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  object-position: top;
+  left: 10%;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.elem:hover img {
+  opacity: 1;
+  left: 27%;
+}
+#marque {
+  width: 100%;
+  padding: 1vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#marque h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3vw;
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  margin-right: 16px;
+  letter-spacing: 1px;
+  animation-name: text-move;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes text-move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+#footer {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2vw;
+  /* background-color: red; */
+}
+#footer-part1 {
+  height: 68%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2vw;
+  padding: 3vw 3vw;
+}
+#footer-part1 h1 {
+  font-size: 2vw;
+  font-family: "Lexend Giga", serif;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  font-weight: 800;
+}
+.footer-img {
+  height: 90%;
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-img h3 {
+  font-weight: 500;
+}
+.footer-img img {
+  height: 200px;
+  width: 350px;
+  object-fit: cover;
+}
+#footer-part2 {
+  height: 32%;
+  width: 100%;
+  display: flex;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#footer-info1 {
+  height: 100%;
+  width: 40%;
+  border-right: 2px solid #000;
+  padding: 1vw 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+#footer-info1 h2 {
+  font-family: "Lexend Giga", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -8px;
+  position: relative;
+}
+#footer-info1 h2::before {
+  content: "model managment";
+  position: absolute;
+  font-size: 0.6rem;
+  top: 24%;
+  right: 6%;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+#footer-info1 h2::after {
+  content: "©";
+  position: absolute;
+  font-size: 0.7rem;
+  top: 7%;
+  right: -6%;
+  font-weight: 300;
+}
+#footer-info1 h5 {
+  font-size: 1.3rem;
+  padding-top: 1vw;
+  font-weight: 500;
+}
+#footer-info2 {
+  height: 100%;
+  width: 20%;
+  padding: 1vw 4vw;
+  border-right: 2px solid #000;
+}
+#footer-info2 h5 {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 1vw;
+  font-weight: 500;
+}
+#footer-info3 {
+  height: 100%;
+  width: 40%;
+}
+#footer-info3 h5 {
+  font-size: 1.3rem;
+  padding: 2vw 4vw;
+  font-weight: 500;
+}
+#footer-info3-part1 {
+  height: 40%;
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+#footer-info3-part2 {
+  height: 60%;
+  width: 100%;
+}
+#footer-info3-icons {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 0 3vw;
+}
+#footer-info3-icons i {
+    font-size: 1.2rem;
+}
+#footer-info3-details {
+    height: 60%;
+    width: 100%;
+    padding: 0 3vw;
+}
+.copyright {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
